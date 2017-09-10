@@ -1,0 +1,14 @@
+Source: soulmate-settings
+Section: admin
+Priority: optional
+Maintainer: Luis Antonio Garcia Gisbert <luisgg@gmail.com>
+Standards-Version: 3.9.2
+Build-Depends: debhelper (>= 7.0.8)
+
+Package: soulmate-gtk-bookmarks-settings
+Architecture: all
+Depends: ${misc:Depends}, soulmate-transmute
+Conflicts: aurex-gtk-bookmarks-settings
+Description: configure users gtk-bookmarks
+ tools to manage gtk-bookmarks in soulmate environments
+

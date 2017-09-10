@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=soulmate default gtk-bookmarks
+Comment=Initialize user's .gtk-bookmarks file
+Exec=/usr/share/soulmate-gtk-bookmarks-settings/sm-gtk-bookmarks-init
+Type=Application
+StartupNotify=false

@@ -1,0 +1,40 @@
+#!/bin/sh
+[ -r $HOME/.config/user-dirs.dirs ] || exit 0
+
+TOKEN_FILE="$HOME/.config/soulmate/gtk-bookmarks-init.done"
+TOKEN_DIR="$HOME/.config/soulmate/gtk-bookmarks"
+GT_BM_FILE="$HOME/.gtk-bookmarks"
+
+[ "$1" != "--force" ] || rm -f $GT_BM_FILE $TOKEN_FILE
+if [ ! -e "$TOKEN_FILE=" ] ; then
+	:> $GT_BM_FILE
+	touch $TOKEN_FILE
+	rm -fr "$TOKEN_DIR"
+fi
+
+mkdir -p "$TOKEN_DIR"
+
+. $HOME/.config/user-dirs.dirs
+BM_LIST="$XDG_DOCUMENTS_DIR $XDG_MUSIC_DIR $XDG_PICTURES_DIR $XDG_VIDEOS_DIR $XDG_DOWNLOAD_DIR"
+for D in "/etc/soulmate-gtk-bookmarks/conf.d/" "/etc/aurex-gtk-bookmarks/conf.d/" ; do
+	if [ -d "$D" ]; then
+		for f in $D/* ; do
+			if [ -r "$f" ] ; then
+				. $f
+				BM_LIST="$BM_LIST $BOOKMARKS"
+			fi
+		done
+	fi
+done
+
+
+for b in $BM_LIST ; do
+	d="$(echo "$b" |sed -e "s%//%/%g;s%/$%%")"
+	B="$(echo "$d" |sed -e "s%/%__%g").done"
+	if [ ! -r "$TOKEN_DIR/$B" ] && [ -d "$d" ] ; then
+		echo "file://$d" >> $GT_BM_FILE
+		touch  "$TOKEN_DIR/$B"
+	fi
+done
+exit 0
+
