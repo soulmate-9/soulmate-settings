@@ -1,3 +1,9 @@
+soulmate-settings (0.3) stretch; urgency=medium
+
+  * tg3-udev-fix renamed to tg3-fix 
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Mon, 11 Sep 2017 22:19:07 +0000
+
 soulmate-settings (0.2) stretch; urgency=medium
 
   * Added binary tg3-udev-fix
