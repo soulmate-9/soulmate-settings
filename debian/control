@@ -12,3 +12,10 @@ Conflicts: aurex-gtk-bookmarks-settings
 Description: configure users gtk-bookmarks
  tools to manage gtk-bookmarks in soulmate environments
 
+Package: tg3-udev-fix
+Architecture: all
+Depends: ${misc:Depends}, udev, ethtool
+Description: fix hardware issues with tg3 network module
+ This package installs an udev rule to disable highdma
+ when loading tg3 network module
+

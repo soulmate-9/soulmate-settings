@@ -1,0 +1,1 @@
+ACTION=="add", SUBSYSTEM=="net", ATTRS{vendor}=="0x14e4", ATTRS{device}=="0x1687", RUN+="/sbin/ethtool -K %k highdma off"
