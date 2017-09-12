@@ -1,3 +1,9 @@
+soulmate-settings (0.4) stretch; urgency=medium
+
+  * Added soulmate-default-settings binary package
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Tue, 12 Sep 2017 00:50:39 +0000
+
 soulmate-settings (0.3) stretch; urgency=medium
 
   * tg3-udev-fix renamed to tg3-fix 

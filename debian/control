@@ -19,3 +19,10 @@ Description: fix hardware issues with tg3 network module
  This package installs an udev rule to disable highdma
  when loading tg3 network module
 
+Package: soulmate-default-settings
+Architecture: all
+Depends: ${misc:Depends}, soulmate-transmute (>=0.26)
+Recommends: vim
+Description: default settings for the soulmate desktop
+ This package contains the default settings used by soulmate
+
