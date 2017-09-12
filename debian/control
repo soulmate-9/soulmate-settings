@@ -21,8 +21,21 @@ Description: fix hardware issues with tg3 network module
 
 Package: soulmate-default-settings
 Architecture: all
-Depends: ${misc:Depends}, soulmate-transmute (>=0.26)
+Depends: ${misc:Depends}, soulmate-transmute
 Recommends: vim
 Description: default settings for the soulmate desktop
  This package contains the default settings used by soulmate
+
+Package: soulmate-themes
+Architecture: all
+Depends: ${misc:Depends}, soulmate-transmute, mate-themes
+Description: soulmate themes
+ This package contains soulmate themes
+
+Package: soulmate-artwork
+Architecture: all
+Depends: ${misc:Depends}, libglib2.0-bin
+Conflicts: mint-artwork-mate
+Description: Default soulmate artwork for MATE
+ Soulmate desktop default artwork for MATE 
 

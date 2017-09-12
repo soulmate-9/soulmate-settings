@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Soulmate Menta
+Comment=Soulmate version of LinuxMint Menta theme
+Comment[es]=Version del thema Menta de LinuxMint para soulmate
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Soulmate-Menta
+MetacityTheme=Soulmate-Menta
+IconTheme=menta
+CursorTheme=mate
+

@@ -1,0 +1,98 @@
+[Toplevel top]
+expand=true
+orientation=top
+size=24
+
+[Toplevel bottom]
+expand=true
+orientation=bottom
+size=24
+
+[Object menu-bar]
+object-type=applet
+applet-iid=MintMenuAppletFactory::MintMenuApplet
+toplevel-id=top
+position=0
+locked=true
+
+[Object show-desktop]
+object-type=applet
+applet-iid=WnckletFactory::ShowDesktopApplet
+toplevel-id=bottom
+position=0
+locked=true
+
+[Object separator]
+object-type=separator
+toplevel-id=bottom
+position=10
+locked=true
+
+[Object launcher-caja]
+object-type=launcher
+launcher-location=/usr/share/applications/caja-browser.desktop
+menu-path=applications:/
+toplevel-id=top
+position=10
+locked=true
+
+[Object launcher-terminal]
+object-type=launcher
+launcher-location=/usr/share/applications/mate-terminal.desktop
+menu-path=applications:/
+toplevel-id=top
+position=20
+locked=true
+
+[Object launcher-firefox]
+object-type=launcher
+launcher-location=/usr/share/applications/firefox.desktop
+menu-path=applications:/
+toplevel-id=top
+position=30
+locked=true
+
+[Object launcher-chromium]
+object-type=launcher
+launcher-location=/usr/share/applications/chromium.desktop
+menu-path=applications:/
+toplevel-id=top
+position=40
+locked=true
+
+[Object window-list]
+object-type=applet
+applet-iid=WnckletFactory::WindowListApplet
+toplevel-id=bottom
+position=20
+locked=true
+
+[Object notification-area]
+object-type=applet
+applet-iid=NotificationAreaAppletFactory::NotificationArea
+toplevel-id=top
+position=60
+panel-right-stick=true
+locked=true
+
+[Object clock]
+object-type=applet
+applet-iid=ClockAppletFactory::ClockApplet
+toplevel-id=top
+position=50
+panel-right-stick=true
+locked=true
+
+[Object trashapplet]
+locked=True
+position=0
+toplevel-id=bottom
+applet-iid=TrashAppletFactory::TrashApplet
+object-type=applet
+panel-right-stick=true
+~                                                                                                                                                             
+~                                                                                                                                                             
+~                                                                                                                                                             
+                                                                                                                                            56,20       Final
+
+

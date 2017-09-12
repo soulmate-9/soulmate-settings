@@ -1,3 +1,9 @@
+soulmate-settings (0.5) stretch; urgency=medium
+
+  * Added soulmate-themes and soulmate-artwork binary packages
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Tue, 12 Sep 2017 15:58:13 +0000
+
 soulmate-settings (0.4) stretch; urgency=medium
 
   * Added soulmate-default-settings binary package
