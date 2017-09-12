@@ -1,3 +1,9 @@
+soulmate-settings (0.7) stretch; urgency=medium
+
+  * Added missing files in soulmate-themes
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Tue, 12 Sep 2017 18:09:16 +0000
+
 soulmate-settings (0.6) stretch; urgency=medium
 
   * Added /usr/local/sbin, /usr/sbin and /sbin to PATH
