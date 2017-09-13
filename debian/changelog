@@ -1,3 +1,9 @@
+soulmate-settings (0.10) stretch; urgency=medium
+
+  *  Fixed soulmate.layout
+
+ -- Luis Antonio Garcia Gisbert <luisgg@gmail.com>  Wed, 13 Sep 2017 13:19:01 +0000
+
 soulmate-settings (0.9) stretch; urgency=medium
 
   * Modify /etc/issue and /etc/issue.net 
